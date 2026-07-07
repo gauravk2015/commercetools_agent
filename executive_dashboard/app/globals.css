@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f5f8ff;
+  --panel: #ffffff;
+  --panel-strong: #eef4ff;
+  --line: #d9e4f5;
+  --text: #002c6e;
+  --muted: #5f718f;
+  --accent: #f0a45a;
+  --accent-soft: #f9e4ce;
+  --success: #1f8a4c;
+  --danger: #c73535;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text);
+  background:
+    linear-gradient(180deg, rgba(219, 232, 255, 0.75) 0%, rgba(245, 248, 255, 1) 35%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(238, 242, 247, 0.65) 100%);
+  font-family: "ITC Avant Garde", "Avenir Next", "Trebuchet MS", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(240, 164, 90, 0.28);
+}
+
+.loading-dots span {
+  animation: dotPulse 1.2s infinite ease-in-out;
+}
+
+.loading-dots span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.loading-dots span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes dotPulse {
+  0%, 80%, 100% {
+    opacity: 0.15;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-1px);
+  }
+}

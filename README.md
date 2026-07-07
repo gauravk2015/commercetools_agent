@@ -9,6 +9,12 @@ The repository contains:
 
 The frontend sends a single `prompt` field to the backend. The backend decides the tool, calls commercetools, normalizes the response, asks the configured LLM to write the executive summary, and returns a standardized JSON payload to the dashboard.
 
+## AI Commerce Operations Agent Dashboard Interface
+
+<p align="center">
+  <img src="executive-dashboard.png" alt="AI Commerce Operations Agent Dashboard" width="900">
+</p>
+
 ## Project Goal
 
 Build a reusable, production-style commerce insights assistant for business users and executives.

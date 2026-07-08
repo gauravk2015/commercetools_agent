@@ -1,4 +1,4 @@
-# Commercetools Agents
+# Commercetools Agent
 
 Executive Commerce Insights is a two-part application for querying commercetools data through a natural-language chat experience.
 
@@ -9,10 +9,16 @@ The repository contains:
 
 The frontend sends a single `prompt` field to the backend. The backend decides the tool, calls commercetools, normalizes the response, asks the configured LLM to write the executive summary, and returns a standardized JSON payload to the dashboard.
 
-## AI Commerce Operations Agent Dashboard Interface
+## AI Commerce Executive Agent Dashboard Interface
 
 <p align="center">
-  <img src="executive-dashboard.png" alt="AI Commerce Operations Agent Dashboard" width="900">
+  <img src="executive-dashboard.png" alt="AI Commerce Executive Agent Dashboard" width="900">
+</p>
+
+## Dashboard Agent Response Interface
+
+<p align="center">
+  <img src="executive-dashboard-1.png" alt="AI Commerce Executive Agent Dashboard" width="900">
 </p>
 
 ## Project Goal
